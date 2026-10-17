@@ -1,0 +1,17 @@
+{
+    "KPlugin": {
+        "Id": "org.local.claudeusage",
+        "Name": "Claude Usage",
+        "Name[de]": "Claude-Verbrauch",
+        "Description": "Shows Claude plan limits and token usage from Claude Code logs",
+        "Description[de]": "Zeigt Claude-Limits und den Token-Verbrauch aus den Claude-Code-Logs",
+        "Icon": "utilities-system-monitor",
+        "Category": "System Information",
+        "License": "MIT",
+        "Version": "1.2",
+        "Website": "https://github.com/DonDavis-vibe/KDE-Plasma-Claude-usage-widget",
+        "FormFactors": ["desktop", "panel"]
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

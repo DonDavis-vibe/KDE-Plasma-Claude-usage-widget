@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Backend tests (local mock server, no network, no real credentials)
+        run: python3 -I tests/test_backend.py
+      - name: Language pack tests
+        run: python3 -I tests/test_translations.py
+      - name: Shell syntax
+        run: bash -n install.sh && bash -n uninstall.sh && bash -n tests/test_install.sh
+      # tests/test_install.sh needs kpackagetool6 (KDE Plasma 6) and is run locally.
