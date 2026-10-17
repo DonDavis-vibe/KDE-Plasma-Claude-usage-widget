@@ -13,7 +13,7 @@ Earlier 1.0 and 1.1 were internal; this is the first version published here.
 - State-coloured bars with the whole scale faintly visible behind the fill; a text label and dot accompany the colour.
 - 10 colour profiles (Traffic light, Ice → Fire, Neon, Amber, Iceberg, Bold, Sunset, Inferno, Colour-blind safe, Mono)
   with a preview in the settings.
-- Comments every 10 % (optional) and language packs: English, German and a Jamaican-patois edition (contributed by Recoil).
+- Comments every 10 % (optional) and language packs: English, German and a Jamaican-patois edition (contributed by [Recoil](https://github.com/Rec0iL)).
   *Automatic* chooses German on a German system and English otherwise. The language is independent of the comments switch.
 - Compact card view, adjustable background opacity, panel support.
 - `install.sh` with package checks, backup and automatic rollback; `uninstall.sh`.

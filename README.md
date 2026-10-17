@@ -29,7 +29,7 @@ Colour-coded bars tell you at a glance whether you can cruise or should ease off
 - **10 colour profiles** for different wallpapers, including a colour-blind-safe one.
 - **Comments every 10 %** – "Totally relaxed" … "Hands off Opus!" … "Game over – grab coffee". Optional, can be switched off
   for plain status texts.
-- **Languages:** English, German and a Jamaican-patois edition. *Automatic* picks German for a German system, English otherwise.
+- **Languages:** English, German and a full **[Jamaican-patois edition](#jamaica--bomboclaat-edition)**. *Automatic* picks German for a German system, English otherwise.
 - **Two views:** a detailed list or compact cards. Adjustable background opacity so it blends into your wallpaper.
 - **Works on the desktop and in a panel** – percentages (or tokens) next to the icon, details on click and in the tooltip.
 
@@ -38,6 +38,28 @@ Colour-coded bars tell you at a glance whether you can cruise or should ease off
   &nbsp;
   <img src="docs/screenshots/settings.png" alt="Settings page" width="480">
 </p>
+
+## Jamaica · bomboclaat edition
+
+*Because your limits deserve a soundtrack.* Pick **Jamaica** under *Language* and the whole widget switches to patois –
+not just the comments, **every** label, tooltip, error message and the settings page:
+
+- **"One love, full chalice"** at the start, **"Babylon a watch wi"** when it gets warm, **"Chalice empty. Bun dem!"** when the limit is gone.
+- **Four variants per step** (five for the first one), re-rolled on every refresh, so the widget never says the same thing twice.
+- Everything else gets the treatment, too: *Right now / Di week*, *Fresh herb in 1 h 22 min*, *Babylon limits*,
+  *Wah wi smoke (Claude Code)*, *Big up di funny chat*, and even the colour profiles are renamed (*Negril sunset*, *Fiyah bun* …).
+
+<p align="center">
+  <img src="docs/screenshots/patois-states.png" alt="Patois edition: the comment changes with every 10 percent" width="380">
+  &nbsp;
+  <img src="docs/screenshots/patois-detailed.png" alt="Patois edition: detailed view" width="380">
+</p>
+<p align="center">
+  <img src="docs/screenshots/patois-settings.png" alt="Patois edition: settings page" width="520">
+</p>
+
+Made by [Recoil](https://github.com/Rec0iL) – big up! *Heads-up:* it contains strong language and drug references. It is opt-in and
+*Automatic* never selects it. The screenshots show one of the variants, with made-up limit values.
 
 ## Requirements
 
@@ -176,7 +198,7 @@ The interface source strings are German (the project started that way); the Engl
 
 ## Credits
 
-- The **Jamaica · bomboclaat edition** language pack (patois comments and interface texts) was contributed by Recoil.
+- The **Jamaica · bomboclaat edition** language pack (patois comments and interface texts) was contributed by [Recoil](https://github.com/Rec0iL).
   It contains strong language and drug references; it is opt-in and the default language is never this one.
 - The *Traffic light* profile uses a standard status palette (green, amber, orange, red); the *Colour-blind safe* profile is based on the
   Okabe–Ito colours.
