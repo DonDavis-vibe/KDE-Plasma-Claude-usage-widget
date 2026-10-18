@@ -45,7 +45,8 @@ Colour-coded bars tell you at a glance whether you can cruise or should ease off
 not just the comments, **every** label, tooltip, error message and the settings page:
 
 - **"One love, full chalice"** at the start, **"Babylon a watch wi"** when it gets warm, **"Chalice empty. Bun dem!"** when the limit is gone.
-- **Four variants per step** (five for the first one), re-rolled on every refresh, so the widget never says the same thing twice.
+- **24 variants per step** (25 for the first one), re-rolled on every refresh, so the widget never says the same thing twice.
+  Cards that sit in the same 10 % step get different variants, too.
 - Everything else gets the treatment, too: *Right now / Di week*, *Fresh herb in 1 h 22 min*, *Babylon limits*,
   *Wah wi smoke (Claude Code)*, *Big up di funny chat*, and even the colour profiles are renamed (*Negril sunset*, *Fiyah bun* …).
 

@@ -3,6 +3,15 @@
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] – 2026-10-18
+
+### Added
+- Jamaica · bomboclaat edition: 24 comment variants per step (25 for the first one) instead of four,
+  contributed by [Recoil](https://github.com/Rec0iL).
+
+### Changed
+- Cards in the same 10 % step no longer show the same comment: each card's position offsets the variant roll.
+
 ## [1.2.0] – 2026-10-17 – first public release
 
 Earlier 1.0 and 1.1 were internal; this is the first version published here.

@@ -111,9 +111,11 @@ PlasmoidItem {
         return commentSets.text(textSet, source, Array.prototype.slice.call(arguments, 1));
     }
 
-    function statusText(pct) {
+    // "slot" (the card's position) offsets the roll, so cards in the same 10 %
+    // step show different variants.
+    function statusText(pct, slot) {
         if (Plasmoid.configuration.funnyComments)
-            return commentSets.pick(funnyComments[pct >= 99.5 ? 10 : Math.min(9, Math.floor(pct / 10))], commentRoll);
+            return commentSets.pick(funnyComments[pct >= 99.5 ? 10 : Math.min(9, Math.floor(pct / 10))], commentRoll + (slot || 0));
         if (pct >= 99.5) return t("Limit erreicht");
         if (pct >= 95) return t("Fast am Limit");
         if (pct >= 75) return t("Wird knapp");
@@ -272,6 +274,7 @@ PlasmoidItem {
                 delegate: Rectangle {
                     id: card
                     required property var modelData
+                    required property int index
                     readonly property real pct: modelData.percent
                     Layout.fillWidth: true
                     implicitHeight: cardCol.implicitHeight + Kirigami.Units.largeSpacing * 2
@@ -325,7 +328,7 @@ PlasmoidItem {
                                 color: root.statusColor(card.pct)
                             }
                             PlasmaComponents3.Label {
-                                text: root.statusText(card.pct)
+                                text: root.statusText(card.pct, card.index)
                                 font: Kirigami.Theme.smallFont
                                 elide: Text.ElideRight
                                 Layout.fillWidth: true
@@ -378,6 +381,7 @@ PlasmoidItem {
                 model: root.limitItems
                 delegate: ColumnLayout {
                     required property var modelData
+                    required property int index
                     Layout.fillWidth: true
                     spacing: 2
                     RowLayout {
@@ -403,7 +407,7 @@ PlasmoidItem {
                             color: root.statusColor(modelData.percent)
                         }
                         PlasmaComponents3.Label {
-                            text: root.statusText(modelData.percent)
+                            text: root.statusText(modelData.percent, index)
                             font: Kirigami.Theme.smallFont
                             elide: Text.ElideRight
                             Layout.fillWidth: true
